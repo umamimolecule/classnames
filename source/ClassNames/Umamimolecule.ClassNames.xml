@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Umamimolecule.ClassNames</name>
+    </assembly>
+    <members>
+        <member name="T:Umamimolecule.ClassNames.CN">
+            <summary>
+            Contains methods to evaluate and create a class name string.
+            </summary>
+        </member>
+        <member name="M:Umamimolecule.ClassNames.CN.Create(System.Object[])">
+            <summary>
+            Evaluates a collection of values to produce a space-delimited string of class names.
+            </summary>
+            <param name="values">The values to evaluate.</param>
+            <returns>A string containing the class names.</returns>
+            <remarks>
+            A value can be one of the following:
+            <br/> - <b>Tuple (string, bool)</b>: If the bool part is true then the string part is included.
+            <br/> - <b>Tuple (string, Func&lt;bool&gt;)</b>: If the bool part evaluates to true then the string part is included.
+            <br/> - <b>KeyValuePair&lt;string, bool&gt;</b>: If the value is true then the key is included.
+            <br/> - <b>KeyValuePair&lt;string, Func&lt;bool&gt;&gt;</b>: If the value evaluates to true then the key is included.
+            <br/> - <b>Func&lt;string&gt;</b>: The evaluated string is included.
+            <para/>All other types will be converted to a string.
+            <para/>Notes:
+            <br/> - Any null or whitespace values are excluded.
+            <br/> - Any collections passed in are flattened.
+            </remarks>
+        </member>
+    </members>
+</doc>
