@@ -2,7 +2,7 @@
 
 ![Nuget](https://img.shields.io/nuget/v/Umamimolecule.ClassNames) [![](https://img.shields.io/badge/license-MIT-blue.svg)](#license)
 
-A utility for Razor or Blazor web applications to conditionally build class names for components.
+A utility for Razor and Blazor web applications to conditionally build class names for components.
 <p align="center">
 <img src="https://raw.githubusercontent.com/umamimolecule/classnames/main/readmelogo.png">
 </p>
@@ -28,7 +28,7 @@ dotnet add package Umamimolecule.ClassNames
 
 ## Quickstart
 
-Let's take the following Blazor code snipper which renders a `<button>` component using the classes `btn` and `btn-primary`:
+Let's take the following Blazor code snippet which renders a `<button>` component using the classes `btn` and `btn-primary`:
 
 ```component.blazor
 <button class="btn btn-primary">
