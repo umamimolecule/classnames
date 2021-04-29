@@ -52,7 +52,7 @@ Say we wanted to always include the `btn` class, but only include `btn-primary` 
   }
 }
 ```
-This particular example uses a tuple of the form `(string, bool)`, but there's many more ways to define conditions.
+This particular example uses a tuple of the form `(string, bool)` to evaluate the classname, but there's many more ways to define conditions.
 
 <a name="conditions" />
 
