@@ -4,7 +4,7 @@
 
 A utility for Razor or Blazor web applications to conditionally build class names for components.
 <p align="center">
-<img src="https://raw.githubusercontent.com/umamimolecule/classnames/main/logo.png">
+<img src="https://raw.githubusercontent.com/umamimolecule/classnames/main/readmelogo.png">
 </p>
 
 ### Table of contents
