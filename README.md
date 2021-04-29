@@ -31,15 +31,18 @@ dotnet add package Umamimolecule.ClassNames
 Let's take the following Blazor code snipper which renders a `<button>` component using the classes `btn` and `btn-primary`:
 
 ```component.blazor
-<button class="btn btn-primary">Click me!</button>
+<button class="btn btn-primary">
+  Click me!
+</button>
 ```
 
 Say we wanted to always include the `btn` class, but only include `btn-primary` based on some condition, then we can achieve this using the `CN.Create` method:
 ```
 @using Umamimolecule.ClassNames
 
-<button class=@CN.Create("btn", ("btn-primary", ShowPrimary()))>Click
-    me!</button>
+<button class=@CN.Create("btn", ("btn-primary", ShowPrimary()))>
+  Click me!
+</button>
 
 @code {
   private bool ShowPrimary()
