@@ -35,10 +35,11 @@ namespace Umamimolecule.ClassNames
             }
 
             // Flatten any elements that are collections themselves
-            var flat = values.SelectMany<object, object>(x => {
+            var flat = values.SelectMany<object, object>(x =>
+            {
                 return x switch
                 {
-                    string  s => new object[] { s },
+                    string s => new object[] { s },
                     IEnumerable e => e.Cast<object>(),
                     _ => new object[] { x },
                 };
