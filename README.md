@@ -22,7 +22,7 @@ Let's take the following Blazor code snipper which renders a `<button>` componen
 <button class="btn btn-primary">Click me!</button>
 ```
 
-Say we wanted to always include the `btn` class, but only include `btn-primary` based on some condition, then we can achieve this:
+Say we wanted to always include the `btn` class, but only include `btn-primary` based on some condition, then we can achieve this using the `CN.Create` method:
 ```
 @using Umamimolecule.ClassNames
 
