@@ -38,8 +38,8 @@ Say we wanted to always include the `btn` class, but only include `btn-primary` 
 ```
 @using Umamimolecule.ClassNames
 
-<button class=@CN.Create("btn", ("btn-primary", ShowPrimary())) @onclick="IncrementCount">Click
-    me</button>
+<button class=@CN.Create("btn", ("btn-primary", ShowPrimary()))>Click
+    me!</button>
 
 @code {
   private bool ShowPrimary()
