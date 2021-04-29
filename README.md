@@ -7,12 +7,24 @@ A utility for Razor or Blazor web applications to conditionally build class name
 <img src="https://raw.githubusercontent.com/umamimolecule/classnames/main/logo.png">
 </p>
 
+### Table of contents
+ - [Installation](#installation)  
+ - [Quickstart](#quickstart)  
+ - [Conditions](#conditions)  
+ - [Notes](#notes)  
+ - [Contributing](#contributing)
+---
+
+<a name="installation" />
+
 ## Installation
 Install the [NuGet package](https://www.nuget.org/packages/Umamimolecule.ClassNames) with dotnet CLI:
 
 ```
 dotnet add package Umamimolecule.ClassNames
 ```
+
+<a name="quickstart" />
 
 ## Quickstart
 
@@ -38,6 +50,8 @@ Say we wanted to always include the `btn` class, but only include `btn-primary` 
 }
 ```
 This particular example uses a tuple of the form `(string, bool)`, but there's many more ways to define conditions.
+
+<a name="conditions" />
 
 ## Conditions
 
@@ -152,7 +166,28 @@ Dictionary<string, Func<bool>> classes = new Dictionary<string, Func<bool>>()
 CN.Create(classes);
 ```
 
+<a name="notes" />
+
 ## Notes
  - All other types will be converted to a string, and if not null or whitespace will be included.
  - Any null or whitespace values are excluded.
  - Any collections passed in are flattened.
+
+<a name="contributing" />
+
+## Contributing
+
+Contributions are most welcome.
+
+### Issues
+
+If you find a bug or feel that some useful functionality is missing, do raise as an issue and/or enhancement request.
+
+### How to contribute
+
+When submitting patches, follow the "fork-and-pull" Git workflow:
+ - Fork the repository on GitHub
+ - Clone the project to your own machine
+ - Commit changes to your own branch
+ - Push your work back up to your fork
+ - Submit a pull request so that we can review your changes
