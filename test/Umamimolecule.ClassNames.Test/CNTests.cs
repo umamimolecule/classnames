@@ -172,6 +172,7 @@ namespace Umamimolecule.ClassNames.Test
         {
             var falseFunc = new Func<bool>(() => false);
             var trueFunc = new Func<bool>(() => true);
+            var jackfruitFunc = new Func<string>(() => "jackfruit");
 
             var values = new object[]
             {
@@ -198,8 +199,9 @@ namespace Umamimolecule.ClassNames.Test
                 new KeyValuePair<string, bool>("ignore", false),
                 new KeyValuePair<string, Func<bool>>("imbe", trueFunc),
                 new KeyValuePair<string, Func<bool>>("ignore", falseFunc),
+                jackfruitFunc,
             };
-            var expected = "apple banana cherry durian elderberry fig grape hackberry imbe";
+            var expected = "apple banana cherry durian elderberry fig grape hackberry imbe jackfruit";
             CN.Create(values).ShouldBe(expected);
         }
     }
