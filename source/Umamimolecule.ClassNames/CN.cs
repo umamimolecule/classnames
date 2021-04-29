@@ -16,11 +16,14 @@ namespace Umamimolecule.ClassNames
         /// <param name="values">The values to evaluate.</param>
         /// <returns>A string containing the class names.</returns>
         /// <remarks>
-        /// A value can be one of the following:
+        /// <a href="link">https://github.com/umamimolecule/classnames#conditions</a>
+        /// <para/>A value can be one of the following:
         /// <br/> - <b>Tuple (string, bool)</b>: If the bool part is true then the string part is included.
         /// <br/> - <b>Tuple (string, Func&lt;bool&gt;)</b>: If the bool part evaluates to true then the string part is included.
         /// <br/> - <b>KeyValuePair&lt;string, bool&gt;</b>: If the value is true then the key is included.
         /// <br/> - <b>KeyValuePair&lt;string, Func&lt;bool&gt;&gt;</b>: If the value evaluates to true then the key is included.
+        /// <br/> - <b>Dictionary&lt;string, bool&gt;</b>: For each true value, the key is included.
+        /// <br/> - <b>Dictionary&lt;string, Func&lt;bool&gt;&gt;</b>: For each value that evaluates to true, the key is included.
         /// <br/> - <b>Func&lt;string&gt;</b>: The evaluated string is included.
         /// <para/>All other types will be converted to a string.
         /// <para/>Notes:
