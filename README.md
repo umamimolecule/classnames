@@ -12,10 +12,10 @@ Install the [NuGet package](https://www.nuget.org/packages/Umamimolecule.ClassNa
 
 ```
 # dotnet
-dotnet add package classnames
+dotnet add package Umamimolecule.ClassNames
 
 # NuGet CLI
-nuget install classnames -OutputDirectory packages
+nuget install Umamimolecule.ClassNames -OutputDirectory packages
 ```
 
 ## Quickstart
