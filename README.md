@@ -1,11 +1,14 @@
-# Classnames
 
-![logo](logo.png)
+<p align="center">
+<img src="https://raw.githubusercontent.com/umamimolecule/classnames/main/logo.png">
+</p>
+
+# Classnames
 
 A utility for Razor or Blazor web applications to conditionally build class names for components.
 
 ## Installation
-Install the [NuGet package]() with dotnet or NuGet CLI:
+Install the [NuGet package](https://www.nuget.org/packages/Umamimolecule.ClassNames) with dotnet or NuGet CLI:
 
 ```
 # dotnet
