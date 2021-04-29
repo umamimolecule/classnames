@@ -1,21 +1,17 @@
+# classnames
 
+![Nuget](https://img.shields.io/nuget/v/Umamimolecule.ClassNames) [![](https://img.shields.io/badge/license-MIT-blue.svg)](#license)
+
+A utility for Razor or Blazor web applications to conditionally build class names for components.
 <p align="center">
 <img src="https://raw.githubusercontent.com/umamimolecule/classnames/main/logo.png">
 </p>
 
-# Classnames
-
-A utility for Razor or Blazor web applications to conditionally build class names for components.
-
 ## Installation
-Install the [NuGet package](https://www.nuget.org/packages/Umamimolecule.ClassNames) with dotnet or NuGet CLI:
+Install the [NuGet package](https://www.nuget.org/packages/Umamimolecule.ClassNames) with dotnet CLI:
 
 ```
-# dotnet
 dotnet add package Umamimolecule.ClassNames
-
-# NuGet CLI
-nuget install Umamimolecule.ClassNames -OutputDirectory packages
 ```
 
 ## Quickstart
@@ -41,7 +37,7 @@ Say we wanted to always include the `btn` class, but only include `btn-primary` 
   }
 }
 ```
-This particular example uses a tuple of the form `(string, bool)`, but there's many more was to pass in conditions.
+This particular example uses a tuple of the form `(string, bool)`, but there's many more ways to define conditions.
 
 ## Conditions
 
