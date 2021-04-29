@@ -4,6 +4,21 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <EnableNETAnalyzers>false</EnableNETAnalyzers>
     <ApplicationIcon>logo.ico</ApplicationIcon>
+    <Authors>Umamimolecule</Authors>
+    <Company />
+    <Description>A utility for Razor or Blazor web applications to conditionally build class names for components.</Description>
+    <PackageProjectUrl>https://github.com/umamimolecule/classnames</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/umamimolecule/classnames</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Classnames Blazor Razor Conditional Class Classname</PackageTags>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <PackageReleaseNotes>https://github.com/umamimolecule/classnames/blob/master/CHANGELOG.md#0.1.0</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.1.0</Version>
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+    <FileVersion>0.1.0.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
