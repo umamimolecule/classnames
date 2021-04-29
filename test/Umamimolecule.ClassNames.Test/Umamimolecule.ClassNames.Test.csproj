@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\source\ClassNames\Umamimolecule.ClassNames.csproj" />
+    <ProjectReference Include="..\..\source\Umamimolecule.ClassNames\Umamimolecule.ClassNames.csproj" />
   </ItemGroup>
 
 </Project>
