@@ -48,10 +48,10 @@ namespace Umamimolecule.ClassNames
                 };
             });
 
-            return string.Join(" ", flat.Select(Stringify).Where(x => !string.IsNullOrWhiteSpace(x)));
+            return string.Join(" ", flat.Select(Evaluate).Where(x => !string.IsNullOrWhiteSpace(x)));
         }
 
-        private static string Stringify(object value)
+        private static string Evaluate(object value)
         {
             if (value == null)
             {
