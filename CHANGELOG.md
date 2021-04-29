@@ -4,16 +4,17 @@
 
 ## [0.1.2] - 2021-04-29
 
-## Changed
+### Changed
 
  - Fix Nuget package icon and changelog link.
 
 ## [0.1.1] - 2021-04-29
 
-## Changed
+### Changed
 
  - Minor documentation fix.
 
 ## [0.1.0] - 2021-04-29
 
+### Added
  - Initial release.
